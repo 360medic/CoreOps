@@ -12,3 +12,8 @@
 	path = tegin/cb-medical
 	url = git@github.com:tegin/cb-medical.git
 	branch = 14.0
+
+[submodule "tegin/medical-fhir"]
+	path = tegin/medical-fhir
+	url = git@github.com:tegin/medical-fhir.git
+	branch = 16.0
