@@ -7,3 +7,8 @@
 	path = OCA/vertical-medical
 	url = git@github.com:OCA/vertical-medical.git
 	branch = 17.0
+
+[submodule "tegin/cb-medical"]
+	path = tegin/cb-medical
+	url = git@github.com:tegin/cb-medical.git
+	branch = 14.0
