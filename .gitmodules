@@ -1,9 +1,0 @@
-[submodule "OCA/web"]
-	path = OCA/web
-	url = git@github.com:OCA/web.git
-	branch = 17.0
-
-[submodule "OCA/server-auth"]
-	path = OCA/server-auth
-	url = git@github.com:OCA/server-auth.git
-	branch = 17.0
