@@ -1,19 +1,5 @@
-[submodule "OCA/web"]
-	path = OCA/web
-	url = git@github.com:OCA/web.git
-	branch = 17.0
-
 [submodule "OCA/vertical-medical"]
 	path = OCA/vertical-medical
 	url = git@github.com:OCA/vertical-medical.git
 	branch = 17.0
 
-[submodule "tegin/cb-medical"]
-	path = tegin/cb-medical
-	url = git@github.com:tegin/cb-medical.git
-	branch = 14.0
-
-[submodule "tegin/medical-fhir"]
-	path = tegin/medical-fhir
-	url = git@github.com:tegin/medical-fhir.git
-	branch = 16.0
