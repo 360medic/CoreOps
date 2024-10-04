@@ -18,36 +18,36 @@
 
         <!-- Resource: mrp.workcenter -->
 
-        <record id="mrp_workcenter_3" model="mrp.workcenter">
-            <field name="name">Assembly 1</field>
+        <record id="mrp_workcenter_32" model="mrp.workcenter">
+            <field name="name">Assembly 12</field>
             <field name="resource_calendar_id" ref="resource.resource_calendar_std"/>
         </record>
 
-        <record id="mrp_workcenter_1" model="mrp.workcenter">
-            <field name="name">Drill 1</field>
+        <record id="mrp_workcenter_12" model="mrp.workcenter">
+            <field name="name">Drill 12</field>
             <field name="resource_calendar_id" ref="resource.resource_calendar_std"/>
         </record>
 
-        <record id="mrp_workcenter_2" model="mrp.workcenter">
-            <field name="name">Assembly 2</field>
+        <record id="mrp_workcenter_22" model="mrp.workcenter">
+            <field name="name">Assembly 22</field>
             <field name="resource_calendar_id" ref="resource.resource_calendar_std"/>
         </record>
 
         <!-- Resource: mrp.bom -->
 
-        <record id="product.product_product_3_product_template" model="product.template">
+        <record id="product.product_product_3_product_template2" model="product.template">
             <field name="route_ids" eval="[(6, 0, [ref('stock.route_warehouse0_mto'), ref('mrp.route_warehouse0_manufacture')])]"/>
         </record>
         <record id="mrp_bom_manufacture" model="mrp.bom">
-            <field name="product_tmpl_id" ref="product.product_product_3_product_template"/>
+            <field name="product_tmpl_id" ref="product.product_product_3_product_template2"/>
             <field name="product_uom_id" ref="uom.product_uom_unit"/>
             <field name="sequence">1</field>
             <field name="produce_delay">10</field>
         </record>
         <record id="mrp_routing_workcenter_0" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_manufacture"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
-            <field name="name">Manual Assembly</field>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
+            <field name="name">Manual Assembly2</field>
             <field name="time_cycle">60</field>
             <field name="sequence">5</field>
             <field name="worksheet_type">pdf</field>
@@ -95,8 +95,8 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="description">Solid wood table.</field>
-            <field name="default_code">FURN_9666</field>
+            <field name="description">Solid wood table.2</field>
+            <field name="default_code">FURN_96662</field>
             <field name="tracking">serial</field>
             <field name="image_1920" type="base64" file="mrp/static/img/table.png"/>
         </record>
@@ -119,8 +119,8 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="description">Solid wood is a durable natural material.</field>
-            <field name="default_code">FURN_8522</field>
+            <field name="description">Solid wood is a durable natural material.2</field>
+            <field name="default_code">FURN_85222</field>
             <field name="tracking">serial</field>
             <field name="image_1920" type="base64" file="mrp/static/img/table_top.png"/>
             <field name="route_ids" eval="[Command.link(ref('mrp.route_warehouse0_manufacture'))]"/>
@@ -134,8 +134,8 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="description">18″ x 2½″ Square Leg</field>
-            <field name="default_code">FURN_2333</field>
+            <field name="description">18″ x 2½″ Square Leg2</field>
+            <field name="default_code">FURN_23332</field>
             <field name="tracking">lot</field>
             <field name="image_1920" type="base64" file="mrp/static/img/table_leg.png"/>
         </record>
@@ -164,7 +164,7 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="description">Stainless steel screw full (dia - 5mm, Length - 10mm)</field>
+            <field name="description">Stainless steel screw full (dia - 5mm, Length - 10mm)2</field>
             <field name="default_code">CONS_89957</field>
             <field name="image_1920" type="base64" file="mrp/static/img/product_product_computer_desk_bolt.png"/>
         </record>
@@ -191,7 +191,7 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="description">Layers that are stick together to assemble wood panels.</field>
+            <field name="description">Layers that are stick together to assemble wood panels.2</field>
             <field name="default_code">FURN_7111</field>
             <field name="image_1920" type="base64" file="mrp/static/img/product_product_wood_ply.png"/>
         </record>
@@ -209,7 +209,7 @@
             <field name="image_1920" type="base64" file="mrp/static/img/product_product_wood_wear.png"/>
         </record>
         <record id="product_product_ply_veneer" model="product.product">
-            <field name="name">Ply Veneer</field>
+            <field name="name">Ply Veneer2</field>
             <field name="categ_id" ref="product.product_category_5"/>
             <field name="standard_price">10</field>
             <field name="list_price">10</field>
@@ -230,7 +230,7 @@
             <field name="weight">0.01</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
-            <field name="default_code">FURN_7023</field>
+            <field name="default_code">FURN_70232</field>
             <field name="image_1920" type="base64" file="mrp/static/img/product_product_wood_panel.png"/>
             <field name="route_ids" eval="[Command.link(ref('mrp.route_warehouse0_manufacture'))]"/>
         </record>
@@ -260,7 +260,7 @@
         </record>
         <record id="mrp_routing_workcenter_5" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_desk"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="time_cycle">120</field>
             <field name="sequence">10</field>
             <field name="name">Assembly</field>
@@ -318,7 +318,7 @@
         </record>
         <record id="mrp_routing_workcenter_0" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_table_top"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="name">Manual Assembly</field>
             <field name="time_cycle">60</field>
             <field name="sequence">5</field>
@@ -349,7 +349,7 @@
         </record>
         <record id="mrp_routing_workcenter_1" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_plastic_laminate"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="name">Long time assembly</field>
             <field name="time_cycle">180</field>
             <field name="sequence">15</field>
@@ -359,7 +359,7 @@
 
         <record id="mrp_routing_workcenter_3" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_plastic_laminate"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="name">Testing</field>
             <field name="time_cycle">60</field>
             <field name="sequence">10</field>
@@ -369,7 +369,7 @@
 
         <record id="mrp_routing_workcenter_4" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_plastic_laminate"/>
-            <field name="workcenter_id" ref="mrp_workcenter_1"/>
+            <field name="workcenter_id" ref="mrp_workcenter_12"/>
             <field name="name">Packing</field>
             <field name="time_cycle">30</field>
             <field name="sequence">5</field>
@@ -596,7 +596,7 @@
         </record>
         <record id="mrp_routing_workcenter_1" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_drawer_rout"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="name">Long time assembly</field>
             <field name="time_cycle">180</field>
             <field name="sequence">15</field>
@@ -606,7 +606,7 @@
 
         <record id="mrp_routing_workcenter_3" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_drawer_rout"/>
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="name">Testing</field>
             <field name="time_cycle">60</field>
             <field name="sequence">10</field>
@@ -616,7 +616,7 @@
 
         <record id="mrp_routing_workcenter_4" model="mrp.routing.workcenter">
             <field name="bom_id" ref="mrp_bom_drawer_rout"/>
-            <field name="workcenter_id" ref="mrp_workcenter_1"/>
+            <field name="workcenter_id" ref="mrp_workcenter_12"/>
             <field name="name">Packing</field>
             <field name="time_cycle">30</field>
             <field name="sequence">5</field>
@@ -657,42 +657,42 @@
         <!-- OEE -->
 
         <record id="mrp_workcenter_efficiency_0" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="loss_id" ref="block_reason7"/>
             <field name="date_start" eval="(datetime.now() - relativedelta(days=5)).strftime('%Y-%m-%d %H:%M:%S')"/>
             <field name="date_end" eval="(datetime.now() - relativedelta(days=2)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
 
         <record id="mrp_workcenter_efficiency_1" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="loss_id" ref="block_reason0"/>
             <field name="date_start" eval="(datetime.now() - timedelta(hours=5)).strftime('%Y-%m-%d %H:%M:%S')"/>
             <field name="date_end" eval="(datetime.now() - timedelta(hours=3)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
 
         <record id="mrp_workcenter_efficiency_2" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_3"/>
+            <field name="workcenter_id" ref="mrp_workcenter_32"/>
             <field name="loss_id" ref="block_reason1"/>
             <field name="date_start" eval="(datetime.now() - timedelta(days=5, hours=4)).strftime('%Y-%m-%d %H:%M:%S')"/>
             <field name="date_end" eval="(datetime.now() - timedelta(days=5, hours=3)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
 
         <record id="mrp_workcenter_efficiency_3" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_1"/>
+            <field name="workcenter_id" ref="mrp_workcenter_12"/>
             <field name="loss_id" ref="block_reason7"/>
             <field name="date_start" eval="(datetime.now() - relativedelta(days=5)).strftime('%Y-%m-%d %H:%M:%S')"/>
             <field name="date_end" eval="(datetime.now() - relativedelta(days=3)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
 
         <record id="mrp_workcenter_efficiency_4" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_1"/>
+            <field name="workcenter_id" ref="mrp_workcenter_12"/>
             <field name="loss_id" ref="block_reason0"/>
             <field name="date_start" eval="(datetime.now() - timedelta(days=5,hours=5)).strftime('%Y-%m-%d %H:%M:%S')"/>
             <field name="date_end" eval="(datetime.now() - timedelta(days=5,hours=1)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
 
         <record id="mrp_workcenter_efficiency_5" model="mrp.workcenter.productivity">
-            <field name="workcenter_id" ref="mrp_workcenter_1"/>
+            <field name="workcenter_id" ref="mrp_workcenter_12"/>
             <field name="loss_id" ref="block_reason1"/>
             <field name="date_start" eval="(datetime.now() - timedelta(hours=1)).strftime('%Y-%m-%d %H:%M:%S')"/>
         </record>
